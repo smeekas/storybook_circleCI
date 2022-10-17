@@ -18,8 +18,18 @@ jobs:
           name: "Say hello"
           command: "echo Hello, World!"
       - run:
-          name: "npm i"
-          command: "yarn install"
+          name: "node version"
+          command: "node --version"
+      - run:
+          name: "npm version"
+          command: "npm --version"
+      - run:
+          name: "yarn install "
+          command: "npm install --global yarn"
+      - run:
+          name: "installing packages"
+          command: "yarn "
+      
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
