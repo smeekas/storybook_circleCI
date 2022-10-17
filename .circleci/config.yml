@@ -27,7 +27,7 @@ jobs:
           command: "npm --version"
       - run:
           name: "yarn install "
-          command: "npm install --global yarn"
+          command: "sudo npm install --global yarn"
       - run:
           name: "installing packages"
           command: "yarn "
