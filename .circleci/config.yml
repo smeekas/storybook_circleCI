@@ -28,6 +28,9 @@ jobs:
       - run:
           name: "installing packages"
           command: "yarn "
+      - run:
+          name: "yarn test"
+          command: "yarn test"
       
 
 # Invoke jobs via workflows
